@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="pub">
+        <img src="{{ asset('assets/img/Untitled.png')}}" alt="">
+    </div>
+    <h2>Tendances du moment</h2>
+    <div class="row">
+        {% for product in top_products %}
+            <div class="col-md-4">
+                <div class="product-item">
+                    <a href="{{ path('product_show', {slug: product.slug}) }}"><img class="img-fluid" src="/uploads/{{product.image}}" alt="{{product.name}}"></a>
+                    <h5 class="mt-2">{{ product.name}}</h5>
+                    <span class="product-subtitle text-center">{{product.subtitle}}</span>
+                    <span class="product-price text-center">{{(product.price / 100 )|number_format(2,',', '.')}} € </span>
+                </div>
+            </div>
+        {% endfor %}
+    </div><!-- /.row -->
+
+<hr class="featurette-divider">
+    <h2 class="garantie-titre">Nos garanties</h2>
+        {# <div class="garant">
+            
+        </div> #}
+        <img class="garantie" src="{{ asset('assets/img/garanties.png')}}" alt="">
+    <hr class="featurette-divider">
+
+
+{% endblock %}

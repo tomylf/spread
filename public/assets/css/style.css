@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Cormorant+Garamond:wght@300&family=Imbue:opsz,wght@10..100,300&family=Inter:wght@600;700&family=Koulen&family=Kufam&family=Merriweather+Sans&family=Montserrat:ital,wght@1,200&family=Odibee+Sans&family=Oxygen&family=Rubik+Glitch&family=Shadows+Into+Light&family=Ubuntu&family=Unbounded:wght@300;400&display=swap');
+
+*{
+   font-family: 'Merriweather Sans', sans-serif;
+}
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+body {
+    position: relative;
+    height: 100%;
+}
+
+main{
+    margin-top: 8vh;
+    padding-bottom: 10vh;
+}
+
+h2{
+    padding-top: 8vh;
+    padding-bottom: 8vh;
+    text-align: center;
+}
+
+.garantie-titre{
+    padding-bottom: 5vh;
+}
+
+.footer-custom{
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(222, 234, 248);
+    box-shadow:0px 0px 10px 0.1rem rgba(0, 0, 0, 0.082);
+}
+/* .garant{
+    margin: 0 auto;
+    width: 80%;
+} */
+.garantie{
+    margin: 0 auto;
+    width: 80%;
+}
+
+.pub{
+    width: 100%;
+}
+.pub img{
+    width: 100%;
+}
+
+
+.footer-custom li {
+    list-style: none;
+}
+
+    
+.navbar {
+    box-shadow:0px 0px 10px 0.1rem rgba(0, 0, 0, 0.479);
+}
+
+.navbar-brand{
+    width: 20%;
+}
+
+#spread-logo{ 
+    width: 90%;
+}
+
+
+.product-item {
+    margin-bottom: 1.5em;
+}
+
+.product-item h5 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 0.9em;
+    margin-bottom: 0.1em;
+}
+
+.product-subtitle {
+    display: block;
+    margin-bottom: 0.2em;
+}
+
+.product-price {
+    font-weight: bold;
+    display: block;
+}
+
+.col-form-label{
+    font-weight: bold;
+    /* margin-bottom: 0.3em; */
+}
+
+strong {
+    display: block;
+    padding: 7px 0;
+}
+
+.cart-summary {
+    padding: 1em;
+    background-color: rgba(225, 232, 235, 0.295);
+    box-shadow:0px 0px 5px 0.1rem rgba(0, 0, 0, 0.1);
+}
+.navbar {
+    background: linear-gradient(115deg, #6228d7, #ee2a7b, #f9ce34 );
+    padding: 1em;
+}
+
+footer{
+    background-color: #626060;
+    color: rgba(0, 0, 0, 0.62);
+}
+.black-logo img{
+    position: center;
+    width: 70%;
+}
+
+footer section .container{
+    padding-top: 1vh;
+}
+
+/* #n-p, #search{
+    margin-top: 8vh;
+} */
