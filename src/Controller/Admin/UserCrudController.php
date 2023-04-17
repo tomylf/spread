@@ -10,6 +10,8 @@ use EasyCorp\Bundle\EasyAdminBundle\Field\DateField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\EmailField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\IdField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\TextField;
+use PasswordHash;
+use Symfony\Component\Form\Extension\Core\Type\PasswordType;
 
 class UserCrudController extends AbstractCrudController
 {
@@ -23,9 +25,11 @@ class UserCrudController extends AbstractCrudController
         return [
             IdField::new('id')->hideOnForm(),
             EmailField::new('email'),
+            TextField::new('password', 'mot de passe'),
             ArrayField::new('roles', 'Rôle'),
             TextField::new('firstname', 'Prénom'),
             TextField::new('lastname', 'Nom'),
+            
         ];
     }
 

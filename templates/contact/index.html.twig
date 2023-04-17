@@ -1,10 +1,19 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Nous contacter - La Boot'Ique'{% endblock %}
+{% block title %}Nous contacter - Spread'{% endblock %}
 
 {% block body %}
+
+        {{ form_start(form) }}
+    {{ form_row(form.firstname) }}
+    {{ form_row(form.lastname) }}
+    {{ form_row(form.email) }}
+    {{ form_row(form.content) }}
+    {{ form_row(form.submit) }}
+    {{ form_rest(form) }}
+    {{ form_end(form) }}
     <h3 class="mb-3">Envoyez nous votre message</h3>
-    {{form(form)}}
+    
     
     {% for message in app.flashes('notice') %}
     <div class="alert alert-success">

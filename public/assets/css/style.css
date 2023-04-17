@@ -21,11 +21,14 @@
 body {
     position: relative;
     height: 100%;
+
+    
 }
 
 main{
-    margin-top: 8vh;
+    margin-top: 2vh;
     padding-bottom: 10vh;
+    
 }
 
 h2{
@@ -46,20 +49,16 @@ h2{
     background-color: rgb(222, 234, 248);
     box-shadow:0px 0px 10px 0.1rem rgba(0, 0, 0, 0.082);
 }
-/* .garant{
+
+.garanty{
     margin: 0 auto;
-    width: 80%;
-} */
-.garantie{
-    margin: 0 auto;
-    width: 80%;
+    width: 70%;
 }
 
-.pub{
-    width: 100%;
-}
+
 .pub img{
     width: 100%;
+    
 }
 
 
@@ -121,11 +120,23 @@ strong {
     background: linear-gradient(115deg, #6228d7, #ee2a7b, #f9ce34 );
     padding: 1em;
 }
+.border{
+    border: 1px solid red;
+}
+.container .contact{
+    margin-top: 3vh;
+    border: 1px solid red;
+}
 
 footer{
+    width: 100%;
+    position: relative;
+    
     background-color: #626060;
     color: rgba(0, 0, 0, 0.62);
 }
+
+
 .black-logo img{
     position: center;
     width: 70%;
@@ -135,6 +146,7 @@ footer section .container{
     padding-top: 1vh;
 }
 
-/* #n-p, #search{
-    margin-top: 8vh;
-} */
+.container .garantie{
+    width: 100%;
+   
+}

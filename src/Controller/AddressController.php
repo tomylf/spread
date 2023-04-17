@@ -34,10 +34,6 @@ class AddressController extends AbstractController
 
             $em->persist($address);
             $em->flush();
-            if ($session->get('order') === 1) {       //Redirection vers la commande si celle-ci a été amorcée
-                $session->set('order', 0);
-                return $this->redirectToRoute('order');
-            }
             return $this->redirectToRoute('account_address');
         }
 

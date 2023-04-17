@@ -24,14 +24,14 @@ class RegisterType extends AbstractType
                 'label' => 'Prénom',
                 'constraints' => new Length(['min' => 3]),
                 'attr' => [
-                    'placeholder' => 'Jean'
+                    'placeholder' => 'Tom'
                 ]
             ])
             ->add('lastname', TextType::class, [
                 'label' => 'Nom de famille',
                 'constraints' => new Length(['min' => 3]),
                 'attr' => [
-                    'placeholder' => 'Passe'
+                    'placeholder' => 'Jedusor'
                 ]
             ])
             ->add('email', EmailType::class, [
@@ -63,7 +63,7 @@ class RegisterType extends AbstractType
                     ]),
                     new Length([
                         'min' => 4,
-                        'minMessage' => 'Votre mot de passe doit contenir minimum 8 charactères',
+                        'minMessage' => 'Votre mot de passe doit contenir minimum 8 caractères',
                         'max' => 4096,
                     ]),
                 ],
@@ -71,7 +71,7 @@ class RegisterType extends AbstractType
             ->add('submit', SubmitType::class, [
                 'label' => 'Valider',
                 'attr' => [
-                    'class' => 'btn btn-outline-success'
+                    'class' => 'btn btn-outline-info'
                 ]
             ])
         ;

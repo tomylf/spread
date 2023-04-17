@@ -16,15 +16,13 @@ class ContactController extends AbstractController
     {
         $form = $this->createForm(ContactType::class);
         $form->handleRequest($request);
-
         if ($form->isSubmitted() && $form->isValid()) {
             $this->addFlash('notice', 'Message envoyé, nous vous répondrons dans les plus brefs délais');
             $datas = $form->getData();
             $content = "De la part de : {$datas['firstname']} {$datas['lastname']} <br> Message : {$datas['content']} <br> Email: {$datas['email']}";
             $mail = new Mail();
-            $mail->send('tom.lefevre@lepoles.org', 'Tom', 'Contact visiteur SPREAD', $content);
+            $mail->send('tom.lefevre@lepoles.org', 'Tom', 'Contact visiteur', $content);
         }
-
         return $this->renderForm('contact/index.html.twig', [
             'form' => $form,
         ]);
